@@ -4,6 +4,8 @@
 # the "/mysql" part at the end, it will automatically create a 'mysql' directory inside
 # whatever path is passed in as parameter
 
+# USAGE - sudo switch-mysql-data-from-var-lib-to-new-dir-needs-sudo-needs-newdir-as-param.sh "/RAID0" 
+
 service mysql stop
 rm -rf "$1/mysql"
 
